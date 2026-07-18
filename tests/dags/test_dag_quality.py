@@ -82,7 +82,6 @@ def test_astronauts_dag_has_expected_tasks():
     task_ids = {t.task_id for t in dag.tasks}
     assert {"get_astronauts", "print_astronaut_craft"} <= task_ids
 
-
 # --------------------------------------------------------------------------- #
 # Unit test of actual task behavior (not just metadata)
 # --------------------------------------------------------------------------- #
