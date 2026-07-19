@@ -28,9 +28,3 @@ astro dev pytest
 ```
 
 Runs everything under `tests/` — DAG import checks, tagging/retry conventions, and task-level behavior checks.
-
-## Notes to self
-
-- Changed `requirements.txt` or `packages.txt`? Needs `astro dev stop` + `astro dev start` to rebuild.
-- Permission errors on files under `include/`? Check ownership/permission bits — the container runs as a different UID than the host user.
-- `astro dev bash` drops into the scheduler container — useful for debugging imports, checking installed packages, or querying local data files directly.
