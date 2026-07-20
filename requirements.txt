@@ -1,2 +1,9 @@
 # Add Python packages here, one per line. Pin versions where possible.
 
+duckdb>=1.1.0
+tabulate==0.9.0
+pyarrow
+apache-airflow-providers-common-sql>=1.30
+airflow-provider-duckdb==0.2.0
+apache-airflow-providers-common-ai[groq]==0.6.0
+groq
